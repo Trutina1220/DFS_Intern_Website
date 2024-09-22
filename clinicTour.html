@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>Direct Focus Solution Intern Website</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+    <style>
+      /* Custom Styles for Video Gallery */
+      .video-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        padding: 20px;
+      }
+
+      .video-item {
+        text-align: center;
+        padding: 10px;
+        background-color: #f5f5f5;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .video-item h3 {
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+        color: #333;
+      }
+
+      .video-item video {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Header -->
+      <div id="header-placeholder"></div>
+
+      <script>
+        // Load the header template
+        fetch("reusable_components/header.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("header-placeholder").innerHTML = data;
+
+            // Set dynamic content
+            const title = document.querySelector("#header-title");
+            const subtitle = document.querySelector("#header-subtitle");
+
+            // Customize these values for each page
+            title.textContent = "Internship Guidelines"; // Set the h1 content here
+            subtitle.textContent = "Clinic Tour"; // Set the p content here
+          });
+      </script>
+
+      <!-- Nav -->
+      <nav id="nav">
+        <ul>
+          <li><a href="index.html#intro">About DFS Placement</a></li>
+          <li><a href="index.html#first">Placement Information</a></li>
+          <li><a href="index.html#second" class="active">Clinic Tour</a></li>
+          <li><a href="emergencyHotline.html">Emergency Hotlines</a></li>
+          <li><a href="article.html">Articles</a></li>
+        </ul>
+      </nav>
+
+      <!-- Main -->
+      <div id="main">
+        <!-- Introduction -->
+        <section id="intro" class="main">
+          <div class="video-container">
+            <div class="video-item">
+              <h3>Clinic Tour</h3>
+              <video controls>
+                <source
+                  src="videos/Clinic tour with sub.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="video-item">
+              <h3>In Front of DFS</h3>
+              <video controls>
+                <source src="videos/DFS front.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="video-item">
+              <h3>Reception</h3>
+              <video controls>
+                <source src="videos/Reception1.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="video-item">
+              <h3>Consultation Room</h3>
+              <video controls>
+                <source src="videos/Consultation room.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="video-item">
+              <h3>Sensory Gym</h3>
+              <video controls>
+                <source src="videos/sensory_gym.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Footer -->
+      <div id="footer-placeholder"></div>
+      <script>
+        // Load the footer
+        fetch("reusable_components/footer.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("footer-placeholder").innerHTML = data;
+          });
+      </script>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

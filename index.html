@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>Direct Focus Solution Intern Website</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+  </head>
+  <style>
+    #main {
+      padding: 2em;
+      background: #f7f7f7;
+    }
+
+    #content {
+      max-width: 800px;
+      margin: 0 auto;
+      background: white;
+      padding: 2em;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    #content h2 {
+      margin-top: 0;
+      color: #333;
+      font-size: 1.75em;
+      border-bottom: 2px solid #ff7e5f;
+      padding-bottom: 0.5em;
+    }
+
+    #content p {
+      line-height: 1.6;
+    }
+  </style>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Header -->
+      <div id="header-placeholder"></div>
+
+      <script>
+        // Load the header template
+        fetch("reusable_components/header.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("header-placeholder").innerHTML = data;
+
+            // Set dynamic content
+            const title = document.querySelector("#header-title");
+            const subtitle = document.querySelector("#header-subtitle");
+
+            // Customize these values for each page
+            title.textContent = "Internship Guidelines"; // Set the h1 content here
+            subtitle.textContent = "Business Management Students"; // Set the p content here
+          });
+      </script>
+
+      <!-- Nav -->
+      <nav id="nav">
+        <ul>
+          <li><a href="#intro" class="active">About DFS Placement</a></li>
+          <li><a href="#first">Placement Information</a></li>
+          <li><a href="#second">Clinic Tour</a></li>
+          <li><a href="emergencyHotline.html">Emergency Hotlines</a></li>
+          <li><a href="article.html">Articles</a></li>
+        </ul>
+      </nav>
+
+      <!-- Main -->
+      <div id="main">
+        <!-- Introduction -->
+        <section id="intro" class="main">
+          <div class="spotlight">
+            <div class="content">
+              <header class="major">
+                <h2>
+                  Intern Placement: <br /><strong
+                    >Business Management Students</strong
+                  >
+                </h2>
+              </header>
+              <p>
+                Placements emphasize on students' learning and growth. Through
+                DFS' Business Integration Initiative, DFS works closely with
+                partnered institutions to have students experience working ini a
+                real business based in Australia. Each student has a small role
+                within a real project and should gain an understanding about how
+                our business is run by the end of the 12-week period.
+              </p>
+              <ul class="actions">
+                <li>
+                  <a href="aboutDfsPlacement.html" class="button">Learn More</a>
+                </li>
+              </ul>
+            </div>
+            <span class="image"
+              ><img src="images/location-2.png" alt=""
+            /></span>
+          </div>
+        </section>
+
+        <!-- First Section -->
+        <section id="first" class="main special">
+          <header class="major">
+            <h2>Placement Information</h2>
+          </header>
+          <ul class="features">
+            <li>
+              <span class="icon solid major style1 fa-code"></span>
+              <h3>Eric Edgari</h3>
+              <p>Course: MBA Project Management</p>
+              <div class="additional-info">
+                <h4>About Me</h4>
+                <p>
+                  I am a passionate web developer with a strong background in
+                  creating dynamic and responsive web applications. With a keen
+                  eye for design and a dedication to clean code, I strive to
+                  build user-friendly and visually appealing websites.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <span class="icon solid major style5 fa-gem"></span>
+              <h3>Ajla Beguli</h3>
+              <p>Course: MBA Health Services</p>
+              <div class="additional-info">
+                <h4>About Me</h4>
+                <p>
+                  I am a passionate web developer with a strong background in
+                  creating dynamic and responsive web applications. With a keen
+                  eye for design and a dedication to clean code, I strive to
+                  build user-friendly and visually appealing websites.
+                </p>
+              </div>
+            </li>
+          </ul>
+          <footer class="major">
+            <ul class="actions special">
+              <li>
+                <a href="weeklyActivities.html" class="button"
+                  >Weekly Activties</a
+                >
+              </li>
+            </ul>
+          </footer>
+        </section>
+
+        <!-- Second Section -->
+        <section id="second" class="main special">
+          <header class="major">
+            <h2>Clinic Tour</h2>
+            <video width="640" height="360" controls>
+              <source src="videos/Clinic tour with sub.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+
+            <p>A tour for DFS lovely Clinic</p>
+          </header>
+
+          <footer class="major">
+            <ul class="actions special">
+              <li><a href="clinicTour.html" class="button">Learn More</a></li>
+            </ul>
+          </footer>
+        </section>
+      </div>
+      <!-- Footer -->
+      <div id="footer-placeholder"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+      // Load the footer
+      fetch("reusable_components/footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+    </script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

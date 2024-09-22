@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <title>Internship Weekly Activities</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+    <style>
+      /* Additional Custom Styles */
+
+      .week-section {
+        margin: 2em 0;
+        background: #f7f7f7;
+        padding: 1.5em;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .week-section h2 {
+        margin-bottom: 1em;
+        color: #333;
+        font-weight: bold;
+        text-align: center;
+        font-size: 2em;
+      }
+
+      .intern-activities {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .intern {
+        width: 48%;
+        background: white;
+        padding: 1em;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .intern h3 {
+        color: #555;
+        border-bottom: 2px solid #ff7e5f;
+        padding-bottom: 0.5em;
+        margin-bottom: 1em;
+      }
+
+      .intern ul {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 0%;
+      }
+
+      .intern ul li {
+        margin-bottom: 0.5em;
+        padding-left: 1em;
+        position: relative;
+      }
+
+      .intern ul li:before {
+        content: "•";
+        color: #ff7e5f;
+        position: absolute;
+        left: 0;
+        font-size: 1.5em;
+        line-height: 1;
+        top: 0.1em;
+      }
+
+      @media (max-width: 768px) {
+        .intern-activities {
+          flex-direction: column;
+        }
+
+        .intern {
+          width: 100%;
+          margin-bottom: 1em;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Header -->
+      <div id="header-placeholder"></div>
+
+      <script>
+        // Load the header template
+        fetch("reusable_components/header.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("header-placeholder").innerHTML = data;
+
+            // Set dynamic content
+            const title = document.querySelector("#header-title");
+            const subtitle = document.querySelector("#header-subtitle");
+
+            // Customize these values for each page
+            title.textContent = "Internship Guidelines"; // Set the h1 content here
+            subtitle.textContent = "Weekly Activities"; // Set the p content here
+          });
+      </script>
+
+      <!-- Navigation -->
+      <nav id="nav">
+        <ul>
+          <li>
+            <a href="index.html#intro" class="active">About DFS Placement</a>
+          </li>
+          <li><a href="index.html#first">Placement Information</a></li>
+          <li><a href="index.html#second">Clinic Tour</a></li>
+          <li><a href="emergencyHotline.html">Emergency Hotlines</a></li>
+          <li><a href="article.html">Articles</a></li>
+        </ul>
+      </nav>
+
+      <!-- Main -->
+      <div id="main">
+        <!-- Content -->
+        <section id="content" class="main">
+          <!-- Week 1 -->
+          <div class="week-section">
+            <h2>Week 1</h2>
+            <div class="intern-activities">
+              <div class="intern">
+                <h3>Ajla Beguli</h3>
+                <ul>
+                  <li>DFS Website Review</li>
+                  <li>DFS Instagram Review</li>
+                  <li>Presentate DFS Website and Instragram to CEO</li>
+                  <li>
+                    Meeting with CEO and General Manager regarding DFS's IT
+                    infrastructure
+                  </li>
+                </ul>
+              </div>
+              <div class="intern">
+                <h3>Eric Edgari</h3>
+                <ul>
+                  <li>DFS website review</li>
+                  <li>DFS instagram review</li>
+                  <li>Presentate DFS website and instragram to CEO</li>
+                  <li>
+                    Meeting with CEO and General Manager regarding DFS's IT
+                    infrastructure
+                  </li>
+                  <li>External Stakeholder Engagement regarding 3CX</li>
+                  <li>Research and Brief Regarding 3CX</li>
+                  <li>
+                    External Stakeholder Engagement in DFS's networking event
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Week 2 -->
+          <div class="week-section">
+            <h2>Week 2</h2>
+            <div class="intern-activities">
+              <div class="intern">
+                <h3>Ajla Beguli</h3>
+                <ul>
+                  <li>DFS Website Review</li>
+                  <li>DFS Instagram Review</li>
+                  <li>Presentate DFS Website and Instragram to CEO</li>
+                  <li>
+                    Meeting with CEO and General Manager regarding DFS's IT
+                    infrastructure
+                  </li>
+                </ul>
+              </div>
+              <div class="intern">
+                <h3>Eric Edgari</h3>
+                <ul>
+                  <li>Research and brief regarding Monday.com</li>
+                  <li>Research and brief regarding Microsoft Planner</li>
+                  <li>Research and brief regarding enteprise antivirus</li>
+                  <li>Contacting 3CX Partner Provider</li>
+                  <li>Research and brief aout 3CX provider</li>
+                  <li>Create 3CX and Monday.com presentation</li>
+                  <li>Presentate 3CX and Monday.com to CEO</li>
+                  <li>Meeting with Mint Consulting</li>
+                  <li>Meeting with PHMG Sales</li>
+                  <li>Edit Clinic Tour Video</li>
+                  <li>
+                    Prepare initial data for Support Independent Living (SIL)
+                    and Specialist Disability Accomodation (SDA)
+                  </li>
+                  <li>Putting Subtitle to the clinic tour video</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Week 3 -->
+          <div class="week-section">
+            <h2>Week 3</h2>
+            <div class="intern-activities">
+              <div class="intern">
+                <h3>Ajla Beguli</h3>
+                <ul>
+                  <li>DFS Website Review</li>
+                  <li>DFS Instagram Review</li>
+                  <li>Presentate DFS Website and Instragram to CEO</li>
+                  <li>
+                    Meeting with CEO and General Manager regarding DFS's IT
+                    infrastructure
+                  </li>
+                </ul>
+              </div>
+              <div class="intern">
+                <h3>Eric Edgari</h3>
+                <ul>
+                  <li>Data cleaning for SDA and SIL Participant</li>
+                  <li>Weekly Catch up with Administration Manager</li>
+                  <li>
+                    Provide Data Visualisation for SDA and SIL Participant
+                    utilizing Tableu
+                  </li>
+                  <li>
+                    Prepare initial data for Support Independent Living (SIL)
+                    and Specialist Disability Accomodation (SDA)
+                  </li>
+                  <li>Create SDA and SIL Report draft</li>
+                  <li>Monday.com overview</li>
+                  <li>Initial study for DFS intern webpage</li>
+                  <li>Catch up meeting with CEO</li>
+                  <li>Submit SDA/SIL briefing for Schofield region</li>
+                  <li>
+                    Review PHMG contract (brandtrack and soundtrack partner for
+                    DFS)
+                  </li>
+                  <li>Fixing Art of Living Marketing Board on Monday.com</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Week 4 -->
+          <div class="week-section">
+            <h2>Week 4</h2>
+            <div class="intern-activities">
+              <div class="intern">
+                <h3>Ajla Beguli</h3>
+                <ul>
+                  <li>DFS Website Review</li>
+                  <li>DFS Instagram Review</li>
+                  <li>Presentate DFS Website and Instragram to CEO</li>
+                  <li>
+                    Meeting with CEO and General Manager regarding DFS's IT
+                    infrastructure
+                  </li>
+                </ul>
+              </div>
+              <div class="intern">
+                <h3>Eric Edgari</h3>
+                <ul>
+                  <li>Research and brief regarding WIISE ERP</li>
+                  <li>Draft Email to client for SDA/SIL briefing</li>
+                  <li>
+                    Meeting with Matthew (DFS Administration Officer) regarding
+                    cleaning Art of Living template in Monday.com
+                  </li>
+                  <li>Create WIISE ERP and Splose ERP comparison</li>
+                  <li>Create internship website html draft</li>
+                  <li>
+                    Fixing Council approval group in Art of Living template
+                  </li>
+                  <li>Final check on SDA/SIL Briefing documents</li>
+                  <li>Submit Briefing to CEO's client for SDA/SIL Briefing</li>
+                  <li>
+                    Meeting with CEO regarding Art of Living Template in
+                    Monday.com
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Week 5 -->
+          <div class="week-section">
+            <h2>Week 5</h2>
+            <div class="intern-activities">
+              <div class="intern">
+                <h3>Ajla Beguli</h3>
+                <ul>
+                  <li>DFS Website Review</li>
+                  <li>DFS Instagram Review</li>
+                  <li>Presentate DFS Website and Instragram to CEO</li>
+                  <li>
+                    Meeting with CEO and General Manager regarding DFS's IT
+                    infrastructure
+                  </li>
+                </ul>
+              </div>
+              <div class="intern">
+                <h3>Eric Edgari</h3>
+                <ul>
+                  <li>Internship Diary and Log Sheet Catchup</li>
+                  <li>
+                    Learn how to create the Habit of Professional Email
+                    <ul>
+                      <li>Acknowledgement/Gratitude/Compliment</li>
+                      <li>Task Description Detailed</li>
+                    </ul>
+                  </li>
+                  <li>Attend Wiise ERP Demo Meeting</li>
+                  <li>Create Wiise ERP demo meeting notes</li>
+                  <li>
+                    Create 4 integration tools briefing for marketers to know
+                    that integrate with Monday.com
+                  </li>
+
+                  <li>
+                    Cleaning up Art of Living Template in Monday.com
+                    <!-- <ul>
+                      <li>Create Project Kickoff Group</li>
+                      <li>Tidy up the Regulatory Compliance Group</li>
+                      <li>Tidy up Council Approval Group</li>
+                      <li>Tidy up Marketing Group</li>
+                      <li>Tidy up Vendor Engagement Group</li>
+                      <li>Tidy up Event Logistics</li>
+                      <li>Tidy up Bump In/ Bump Out</li>
+                      <li>Tidy up Volunteer/Personal Requirements</li>
+                      <li>Contact Matthew for feedback on further progress</li>
+                      <li>
+                        Site Management Plan moved (Can be a recommendation)
+                      </li>
+                      <li>
+                        Change all Priority Status Labels to be the
+                        Blank/default Grey in the 2.0 Master List - so that they
+                        can be appropriately populated as the next event.
+                      </li>
+                      <li>
+                        Remove all attachments relating to the 2024 event from
+                        the 2.0 Master Task list template - so that there is no
+                        confusion relating to which information is relevant to
+                        the next event
+                      </li>
+                      <li>
+                        Remove information from the Monday doc column in the 2.0
+                        also
+                      </li>
+                      <li>
+                        Remove any allocated task ownership from the Task Owner
+                        column in the 2.0 template
+                      </li>
+                      <li>
+                        Change all Deadlines Labels to be the Blank/default Grey
+                        in the 2.0 Master List - so that they can be
+                        appropriately populated as the next event.
+                      </li>
+                      <li>
+                        Change all Status Labels to be the Blank/default Grey in
+                        the 2.0 Master List - so that they can be appropriately
+                        populated as the next event.
+                      </li>
+                    </ul> -->
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Week 6 -->
+          <div class="week-section">
+            <h2>Week 6</h2>
+            <div class="intern-activities">
+              <div class="intern">
+                <h3>Ajla Beguli</h3>
+                <ul>
+                  <li>DFS Website Review</li>
+                </ul>
+              </div>
+              <div class="intern">
+                <h3>Eric Edgari</h3>
+                <ul>
+                  <li>Mint consulting Monday.com partnership briefing</li>
+                  <li>Collaborate with Ajla regarding Task Prioritization</li>
+                  <li>
+                    Discussion with Ajla regarding the NFT Proposal review and
+                    expand
+                  </li>
+                  <li>
+                    Gather relevant questions and ask Dom about the NFT Proposal
+                  </li>
+                  <li>
+                    Discussion with Ajla regarding the Psychiatric cross
+                    referral partnership
+                  </li>
+                  <li>
+                    Finish up website example emergency hotlines and clinic tour
+                  </li>
+                  <li>
+                    Collaborate with Matthew on fixing the Monday.com template
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Week 7 -->
+          <div class="week-section">
+            <h2>Week 7</h2>
+            <div class="intern-activities">
+              <div class="intern">
+                <h3>Ajla Beguli</h3>
+                <ul>
+                  <li>DFS Website Review</li>
+                </ul>
+              </div>
+              <div class="intern">
+                <h3>Eric Edgari</h3>
+                <ul>
+                  <li>
+                    Collaborate with Ajla regarding Lithgow schools and
+                    surrounding area Marketing Strategy
+                  </li>
+                  <li>
+                    Collaborate with Ajla creating a sample brochure for LHS
+                    that focuses on early prevention
+                  </li>
+                  <li>Catch up meeting with Raz and Ajla</li>
+                  <li>Task Prioritization with Raz</li>
+                  <li>Catch up with Dom</li>
+                  <li>
+                    Investigate Assessment resources and inventory for LHS
+                    project
+                  </li>
+                  <li>
+                    Clean up Assessment resources price template for LHS project
+                  </li>
+                  <li>Participate in NFT initial assessment with Raquel</li>
+                  <li>
+                    Stakeholder engagement regarding NFT program with Raquel
+                  </li>
+                  <li>Participate in a mini mind map for NFT assessment</li>
+                  <li>
+                    Collaborate with Ajla regarding Lithgow School clinical
+                    space NFT business case
+                  </li>
+                  <li>
+                    Collaborate with Ajla regarding the Lithgow school brochure
+                    for early child intervention
+                  </li>
+                  <li>
+                    Collaborate with Ajla to find more information regarding the
+                    NFT Trial Proposal
+                  </li>
+                  <li>
+                    Ask Raz for feedback regarding the business case and
+                    brochure
+                  </li>
+                  <li>Submit a Business case and brochure to Dom</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Week 8 -->
+          <div class="week-section">
+            <h2>Week 8</h2>
+            <div class="intern-activities">
+              <div class="intern">
+                <h3>Ajla Beguli</h3>
+                <ul>
+                  <li>DFS Website Review</li>
+                </ul>
+              </div>
+              <div class="intern">
+                <h3>Eric Edgari</h3>
+                <ul>
+                  <li>
+                    Collaborate with Ajla for cross-referral workflow for Dr.
+                    Mosadek Partnership
+                  </li>
+                  <li>Task review meeting with Raz and Ajla</li>
+                  <li>Collaborate with Ajla for NFT trial proposal</li>
+                  <li>
+                    Collaborate with Ajla for incorporating feedback from Raz
+                    for NFT trial proposal and Dr. Mosadek workflow
+                  </li>
+                  <li>Lithgow High School Assessment Resources project</li>
+                  <li>PHMG Script suggestions</li>
+                  <li>Cross-referral workflow for Merryland's clinic</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Week 9 -->
+          <div class="week-section">
+            <h2>Week 9</h2>
+            <div class="intern-activities">
+              <div class="intern">
+                <h3>Ajla Beguli</h3>
+                <ul>
+                  <li>DFS Website Review</li>
+                </ul>
+              </div>
+              <div class="intern">
+                <h3>Eric Edgari</h3>
+                <ul>
+                  <li>Mint consulting Monday.com partnership briefing</li>
+                  <li>
+                    Collaborate with Matthew on fixing the monday.com template
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Week 10 -->
+          <div class="week-section">
+            <h2>Week 10</h2>
+            <div class="intern-activities">
+              <div class="intern">
+                <h3>Ajla Beguli</h3>
+                <ul>
+                  <li>DFS Website Review</li>
+                </ul>
+              </div>
+              <div class="intern">
+                <h3>Eric Edgari</h3>
+                <ul>
+                  <li>
+                    Review Assessment resources for Lithgow High School Project
+                  </li>
+                  <li>
+                    Catch up meeting with Raz regarding remaining tasks and
+                    internship timeline
+                  </li>
+                  <li>
+                    Submit clinic photo for Google listing and marketing to Anja
+                  </li>
+                  <li>
+                    Review meeting with Dom regarding neurofeedback trial
+                    proposal and business case
+                  </li>
+                  <li>
+                    Review Lithgow Consult room High School Business Proposal as
+                    per Dom's feedback
+                  </li>
+                  <li>Create General School consult room business case</li>
+                  <li>Review NFT Trial Proposal as per Dom's feedback</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Week 11 -->
+          <div class="week-section">
+            <h2>Week 11</h2>
+            <div class="intern-activities">
+              <div class="intern">
+                <h3>Ajla Beguli</h3>
+                <ul>
+                  <li>DFS Website Review</li>
+                </ul>
+              </div>
+              <div class="intern">
+                <h3>Eric Edgari</h3>
+                <ul>
+                  <li>Submit Assessment resources</li>
+                  <li>Feedback and evaluation meeting with Dom and Raz</li>
+                  <li>Submit Empowering Care Support cross-referral workflow</li>
+                  <li>Review and incorporate feedback from Anja regarding Empowering Care Support cross-referral workflow</li>
+                  <li>Feedback and evaluation meeting with Raz</li>
+                  <li>Progress on the website specifically on the styling and the mental health article</li>
+                  <li>Review and incorporate feedback from Dom regarding LHS business case</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Add more weeks as needed -->
+        </section>
+      </div>
+
+      <!-- Footer -->
+      <div id="footer-placeholder"></div>
+      <script>
+        // Load the footer
+        fetch("reusable_components/footer.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("footer-placeholder").innerHTML = data;
+          });
+      </script>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
