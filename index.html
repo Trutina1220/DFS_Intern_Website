@@ -18,6 +18,36 @@
     /></noscript>
   </head>
   <style>
+    /* Profile Image Size */
+    .icon-image {
+      display: inline-block;
+      width: 14rem; /* Increase size */
+      height: 16rem; /* Keep width and height the same for a circle */
+      border-radius: 100%; /* Make the image circular */
+      border: solid 2px currentcolor; /* Slightly thicker border */
+      padding: 1em; /* Adjust padding to scale with size */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+      object-fit: cover; /* Ensure the image fills the circular space */
+      margin: 0 0 2em 0;
+      cursor: default; /* Keep the cursor default */
+      transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    }
+/* About me styling */
+    .about-me {
+    text-align: justify;
+    margin: 10px 0; /* Add some margin to space out the paragraphs */
+    line-height: 1.6; /* Adjust line height for better readability */
+}
+
+    /* For hover effect similar to the icon */
+    .icon-image:hover {
+      background-color: rgba(
+        255,
+        255,
+        255,
+        0.35
+      ); /* Same hover background as icon */
+    }
     #main {
       padding: 2em;
       background: #f7f7f7;
@@ -117,13 +147,15 @@
             <h2>Placement Information</h2>
           </header>
           <ul class="features">
+           
+
             <li>
-              <span class="icon solid major style1 fa-code"></span>
-              <h3>Eric Edgari</h3>
-              <p>Course: MBA Project Management</p>
+              <span class="icon solid major style5 fa-gem"></span>
+              <h3>Ajla Beguli</h3>
+              <p>Course: MBA Health Services</p>
               <div class="additional-info">
                 <h4>About Me</h4>
-                <p>
+                <p class="about-me">
                   I am a passionate web developer with a strong background in
                   creating dynamic and responsive web applications. With a keen
                   eye for design and a dedication to clean code, I strive to
@@ -133,16 +165,21 @@
             </li>
 
             <li>
-              <span class="icon solid major style5 fa-gem"></span>
-              <h3>Ajla Beguli</h3>
-              <p>Course: MBA Health Services</p>
+              <img src="images/eric.jpg" alt="Eric Edgari" class="icon-image" />
+              <h3>Eric Edgari</h3>
+              <p>Course: MBA Project Management</p>
               <div class="additional-info">
                 <h4>About Me</h4>
-                <p>
-                  I am a passionate web developer with a strong background in
-                  creating dynamic and responsive web applications. With a keen
-                  eye for design and a dedication to clean code, I strive to
-                  build user-friendly and visually appealing websites.
+                <p class="about-me">
+                  I am a recent graduate with a Bachelor of Computer Science
+                  degree, currently pursuing an MBA in Project Management. My
+                  passion for technology and my strong organizational skills
+                  have led me to this exciting field. I am a dedicated and
+                  detail-oriented individual with a proven ability to solve
+                  complex problems and adapt to new challenges. My technical
+                  background combined with my project management education
+                  equips me with a unique perspective and a solid foundation for
+                  success in this dynamic industry.
                 </p>
               </div>
             </li>
@@ -163,7 +200,10 @@
           <header class="major">
             <h2>Clinic Tour</h2>
             <video width="640" height="360" controls>
-              <source src="https://trutina1220.github.io/DFS_Intern_Website/videos/clinic_tour.mp4" type="video/mp4" />
+              <source
+                src="https://trutina1220.github.io/DFS_Intern_Website/videos/clinic_tour.mp4"
+                type="video/mp4"
+              />
               Your browser does not support the video tag.
             </video>
 
