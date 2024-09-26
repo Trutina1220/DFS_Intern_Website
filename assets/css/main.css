@@ -3708,6 +3708,10 @@ input, select, textarea {
         text-align: center;
         width: 100%;
 	}
+
+	#footer h2{
+		color: white;
+	}
 	
 
       #footer .icons {

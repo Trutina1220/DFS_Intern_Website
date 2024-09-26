@@ -6,7 +6,7 @@
 -->
 <html>
   <head>
-    <title>Article</title>
+    <title>Sample Submission</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -18,6 +18,27 @@
     /></noscript>
   </head>
   <style>
+    /* Styling for two sections */
+    .article-section {
+      padding: 2em 0;
+      margin-bottom: 2em;
+    }
+
+    .article-section:nth-child(even) {
+      background-color: #f4f4f4;
+    }
+
+    .article-section:nth-child(odd) {
+      background-color: #fff;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2em;
+      font-weight: bold;
+      margin-bottom: 1em;
+    }
+
     #pdf-container {
       width: 100%;
       height: 80vh; /* Adjust the height as needed */
@@ -29,6 +50,7 @@
       height: 100%;
       border: none;
     }
+
   </style>
   <body class="is-preload">
     <!-- Wrapper -->
@@ -49,7 +71,7 @@
 
 			// Customize these values for each page
             title.textContent = "Internship Guidelines"; // Set the h1 content here
-            subtitle.textContent = "Article"; // Set the p content here
+            subtitle.textContent = "Sample Submission"; // Set the p content here
           });
       </script>
 
@@ -60,23 +82,43 @@
           <li><a href="index.html#first">Placement Information</a></li>
           <li><a href="index.html#second">Clinic Tour</a></li>
           <li><a href="emergencyHotline.html">Emergency Hotlines</a></li>
-          <li><a href="#main" class="active">Articles</a></li>
-          <li><a href="sample_submission.html">Sample Submission</a></li>
+          <li><a href="article.html">Articles</a></li>
+          <li><a href="#main" class="active">Sample Submission</a></li>
+          
         </ul>
       </nav>
 
+      <!-- Wrapper -->
+  
+
       <!-- Main -->
       <div id="main">
-        <!-- Content -->
-        <section id="content" class="main">
+
+        <!-- First Article Section -->
+        <section id="article1" class="article-section">
+          <h1>DFS Services in Merrylands</h1>
           <div id="pdf-container">
             <iframe
-              src="pdf_file/mentalHealthArticleFinal.pdf"
+              src="pdf_file/DFS_in_Merryland's_clinic.pdf"
               allowfullscreen
             ></iframe>
           </div>
         </section>
-      </div>
+
+        <!-- Second Article Section -->
+        <section id="article2" class="article-section">
+          <h1>Schofields SDA and SIL Briefing</h1>
+          <div id="pdf-container">
+            <iframe
+              src="pdf_file/SDA_SIL Briefing.docx-2.pdf"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </section>
+
+      
+
+  
 
       <!-- Footer -->
       <div id="footer-placeholder"></div>
